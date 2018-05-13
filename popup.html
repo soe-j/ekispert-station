@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/rosen.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/popup.css">
+    <script src="javascripts/rosen.js"></script>
+    <script src="javascripts/jquery-1.11.3.min.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
+    <script src="javascripts/popup.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1>
+          Ekispert Station
+        </h1>
+      </div>
+    </header>
+    <article>
+      <div class="container">
+        <form>
+          <div class="input-group">
+            <span class="input-group-addon">
+              Code
+            </span>
+            <input id="station-code" class="form-control">
+          </div>
+
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                Name
+          			<span class="caret"></span>
+          		</button>
+          		<ul id="station-name-list" class="dropdown-menu" role="menu">
+          			<li><a>高円寺</a></li>
+          		</ul>
+            </span>
+            <input id="station-name" class="form-control">
+          </div>
+
+          <div class="input-group">
+            <span class="input-group-addon">
+              Yomi
+            </span>
+            <input id="station-yomi" class="form-control">
+          </div>
+
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                Type
+          			<span class="caret"></span>
+          		</button>
+          		<ul id="station-type-list" class="dropdown-menu" role="menu">
+                <li><a>train</a></li>
+                <li><a>plane</a></li>
+                <li><a>ship</a></li>
+                <li><a>bus</a></li>
+          		</ul>
+            </span>
+            <input id="station-type" class="form-control">
+          </div>
+        </form>
+
+        <div id="station-map"></div>
+
+        <div id="station-message" class="alert alert-info">
+          Please input Code / Name (and Type)
+        </div>
+      </div>
+    </article>
+  </body>
+</html>
